@@ -23,4 +23,24 @@ private:
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
+
+	sf::CircleShape circle;
+	sf::CircleShape contCircle;
+	sf::CircleShape allCircle;
+
+	sf::Font font;
+	sf::Text text;
+
+	float velocity;
+
+	bool forward = true;
+
+	bool boundaryT = false;
+	bool boundaryL = false;
+	bool boundaryR = false;
+	bool boundaryB = false;
+
+	float allVelocity;
+	bool forwardX = true;
+	bool forwardY = true;
 };
